@@ -12,6 +12,12 @@ namespace lists
             planetList.Add("Jupiter");
             planetList.Add("Saturn");
 
+            // planetList.ForEach(planet => Console.WriteLine(planet));
+
+            List<string> morePlanets = new List<string>(){"Uranus", "Neptune"};
+
+            planetList.AddRange(morePlanets);
+
             planetList.ForEach(planet => Console.WriteLine(planet));
         }
     }

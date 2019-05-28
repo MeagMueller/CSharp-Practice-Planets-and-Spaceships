@@ -28,7 +28,9 @@ namespace lists
 
             // 4. Use Insert() to add Earth, and Venus in the correct order.
 
-            
+            planetList.Insert(2, "Earth");
+
+            planetList.ForEach(planet => Console.WriteLine(planet));
 
             // 5. Use Add() again to add Pluto to the end of the list.
             // 6. Now that all the planets are in the list, slice the list using GetRange() in order to extract the rocky planets into a new list called rockyPlanets. The rocky planets will remain in the original planets list.
